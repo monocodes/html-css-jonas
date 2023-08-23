@@ -1,11 +1,12 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+/* * {
+  border-top: 10px solid #1089ad;
+} */
+
+body {
   color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1089ad;
 }
 
 h1,
@@ -121,7 +122,7 @@ article p:first-child {
   color: red;
 } */
 
-/* Styling links */
+/* Styling Hyperlinks */
 /* LVHA - real normal order: link, visited, hover, active */
 /* :link - only real links */
 a:link {
@@ -148,3 +149,34 @@ a:active {
   font-style: italic;
 }
 /* LVHA */
+
+/* CSS Theory #1: Conflicts Between Selectors */
+/* Resolving conflicts */
+
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+!important - place it in any element to make the selector highest priority
+actually, the best practice is to avoid using this keyword
+footer p {
+  color: green !important;
+} */
+
+/* CSS Theory #2: Inheritance and the Universal Selector */
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
+
+nav {
+  font-size: 18px;
+}
