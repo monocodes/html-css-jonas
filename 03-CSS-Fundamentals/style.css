@@ -33,6 +33,7 @@ body {
 
 nav {
   font-size: 18px;
+  /* text-align: center; */
 }
 
 article {
@@ -144,7 +145,7 @@ li:last-child {
   font-weight: bold;
 } */
 
-/* Pseudo-class */
+/* : - Pseudo-class */
 li:first-child {
   font-weight: bold;
 }
@@ -205,6 +206,40 @@ button {
   left: 50px; */
   bottom: 50px;
   right: 50px;
+}
+
+/* :: - Pseudo-elements */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* + - Adjacent sibling selector */
+/* It selects the next element */
+/* h3 + p::first-line {
+  color: red;
+} */
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+/* Before and after pseudo elements */
+/* :: - it's html elements related to other elements and made inside CSS */
+/* after - element will become the last child element */
+/* before - element will become the first child element */
+h2::before {
+  content: 'TOP';
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
 
 /* Styling Hyperlinks */
