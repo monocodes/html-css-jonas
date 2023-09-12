@@ -15,7 +15,7 @@ body {
 
 .container {
   /* the trick to make all content centered in the browser */
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -305,7 +305,6 @@ nav p {
 }
 
 .author {
-  /* padding-left: 80px; */
   float: left;
   margin-top: 10px;
   margin-left: 20px;
@@ -317,4 +316,30 @@ h1 {
 
 nav {
   float: right;
+}
+
+/* Clearing Floats */
+.clear {
+  clear: both;
+}
+
+/* The Clearfix Hack */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
