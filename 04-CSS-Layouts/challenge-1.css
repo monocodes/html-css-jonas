@@ -1,0 +1,173 @@
+/* Challenge #1 */
+/* https://codepen.io/jonasschmedtmann/pen/eYgbXrV/1a12771af64312342aa5a5f45bd2347c */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/* PRODUCT */
+.product {
+  border: 4px solid black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 22px;
+  background-color: #f7f7f7;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+/* Sale-badge with Pseudo element inside CSS */
+.product-title::before {
+  content: 'SALE';
+  background-color: #ec2f2f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  padding: 5px 10px;
+  left: -39px;
+  top: -18px;
+  letter-spacing: 3px;
+}
+
+.product-image {
+  float: left;
+  margin-right: 40px;
+}
+
+/* Sale badge with html p element inside h2 */
+/* .sale-badge {
+  color: white;
+  background-color: #ec2f2f;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  letter-spacing: 3px;
+  left: -39px;
+  top: -18px;
+  position: absolute;
+} */
+
+/* PRODUCT INFORMATION */
+
+.order-details {
+  width: 240px;
+  float: left;
+  margin-right: 40px;
+}
+
+.product-details {
+  float: left;
+  width: 240px;
+}
+
+.price {
+  font-size: 24px;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.shipping {
+  float: right;
+  color: #777;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.description {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.product-colors div {
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.product-colors div:nth-child(1) {
+  background-color: black;
+}
+.product-colors div:nth-child(2) {
+  background-color: rgb(47 110 226);
+}
+.product-colors div:nth-child(3) {
+  background-color: rgb(236 48 47);
+}
+.product-colors div:nth-child(4) {
+  background-color: rgb(239 191 31);
+}
+.product-colors div:nth-child(5) {
+  background-color: rgb(145 204 31);
+}
+.product-colors div:nth-child(6) {
+  background-color: rgb(135 83 20);
+  margin-right: 0;
+}
+
+/* PRODUCT DETAILS */
+.details {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+
+.btn-cart {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border-top: 4px solid black;
+}
+
+.btn-cart:hover {
+  background-color: white;
+  color: black;
+  clear: both;
+}
